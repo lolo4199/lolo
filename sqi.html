@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sqi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            padding-top: 84px;
+            overflow-y: hidden;
+            margin-top: -1px;
+
+
+        }
+
+        header {
+            width: 100%;
+            height: 86px;
+            top: 0;
+            position: fixed;
+            line-height: 23px;
+            font-weight: 500;
+            background-color: #fff;
+            box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+            z-index: 2;
+            /* position: relative; */
+            /* z-index: 99999; */
+        }
+
+        ul {
+            list-style: none;
+        }
+
+
+        .abt {
+            width: 240px;
+            /* height: 60px; */
+            display: none;
+            visibility: hidden;
+            /* border: thin solid gold; */
+            padding: 20px;
+            background-color: rgb(233, 233, 240);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+            transform: translateZ(0);
+            /* opacity: 0; */
+            border-top: 3px solid #2ea3f2;
+            font-weight: 700;
+            margin-top: 35px;
+            position: absolute;
+            /* color: rgb(97, 16, 5); */
+            text-align: left;
+        }
+
+        .abou:hover .abt {
+
+
+            display: block;
+            visibility: visible;
+
+
+        }
+
+        .navhead {
+            /* padding-left: 107px; */
+            /* float: right; */
+            height: 77px;
+            position: absolute;
+            width: 60%;
+            right: 0;
+            /* border: thin solid rgb(37, 53, 0); */
+
+            /* width: 80%; */
+        }
+
+        .navOne {
+            width: 100%;
+            height: 70%;
+            position: absolute;
+            bottom: 0;
+            /* border: thin solid goldenrod; */
+            /* float: left; */
+        }
+
+        .logoCon {
+            width: 80%;
+            margin: auto;
+            /* text-align: left; */
+            height: 100%;
+            position: relative;
+            /* right: 0; */
+            /* border: thin solid red; */
+        }
+
+        .logo {
+            /* width: 10%; */
+            /* height: 100%; */
+            /* float: left; */
+            position: absolute;
+            /* border: thin solid yellow; */
+        }
+
+        .ull {
+            display: flex;
+            /* position: relative; */
+            gap: 43px;
+            font-size: 14px;
+            font-weight: 500;
+            padding-top: 8px;
+        }
+
+        .mainm {
+            width: 100%;
+            height: 450px;
+            background-image: linear-gradient(180deg, rgba(150, 105, 97, 0.67) 0%, rgba(2, 0, 76, 0.84) 100%),
+                url(https://edu.sqi.ng/wp-content/uploads/2020/02/SQI-CLASS-SHOT.jpg)
+        }
+
+        .mainone {
+            position: relative;
+            width: 80%;
+            /* border: thin solid green; */
+            margin: auto;
+
+        }
+
+        h2 {
+            font-size: 55px;
+        }
+
+        .hTwo {
+            position: absolute;
+            right: 0;
+            text-align: right;
+            top: 70px;
+            /* justify-content: center; */
+        }
+
+        /* nav {
+            position: absolute;
+            padding: 20px 0;
+            z-index: 9999;
+            width: 240px;
+            background: #fff;
+            visibility: hidden;
+            opacity: 0;
+            border-top: 3px solid #2ea3f2;
+
+            text-align: left;
+            /* list-style: none; */
+        /* */
+        .two {
+            width: 100%;
+            /* border: thin solid yellow; */
+            margin: auto;
+
+        }
+
+        .twoSec {
+            width: 80%;
+            /* border: thin solid yellow; */
+            margin: auto;
+            padding-top: 30px;
+            display: flex;
+            gap: 10px;
+
+        }
+
+        .twohead {
+            width: 80%;
+            margin: auto;
+            padding-top: 80px;
+        }
+
+        .seco {
+            width: 100%;
+            /* border: thin solid /rgb(161, 53, 53); */
+            /* border-top: blue; */
+            margin-top: 20px;
+            padding-top: 30px;
+        }
+
+        .twosplit {
+            line-height: 23px;
+
+        }
+
+        .secbtn {
+            width: 240px;
+            height: 50px;
+            margin-top: 20px;
+            border-radius: 50px;
+            color: white;
+            font-weight: bolder;
+            background-color: rgb(39, 39, 219);
+        }
+
+        .hTo {
+            font-size: 44px;
+            color: rgb(6, 6, 77);
+            font-weight: 900;
+        }
+
+        /* .twoimg{
+            margin-left: 59px;
+        } */
+        .threeCon {
+            width: 100%;
+            height: 300px;
+            /* border: thin solid orange; */
+            position: relative;
+            display: flex;
+        }
+
+        .three {
+            width: 80%;
+            /* position: absolute; */
+            /* bottom: 0; */
+            /* height: %; */
+            /* border: thin solid red; */
+            margin: auto;
+            /* align-self: center; */
+            /* line-height: 30px; */
+            /* margin: 60px auto; */
+            /* justify-content: center; */
+        }
+        .three h1{
+            font-size: 44px;
+            color: rgb(6, 6, 77);
+            font-weight: 900;
+            padding-bottom: 20px;
+            /* justify-contentascZz: space-around; */
+        }
+        .three p{
+            padding-bottom: 20px;
+            font-weight: 400;
+            color: #0f393b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <div class="logoCon">
+                <div class="logo">
+                    <a href="https://edu.sqi.ng/">
+                        <img src="https://edu.sqi.ng/wp-content/uploads/2019/01/co.jpg" width="77" height="77"
+                            alt="Acquire In-Demand Tech skills.">
+                    </a>
+
+                </div>
+                <div class="navhead">
+                    <nav class="navOne">
+                        <ul class="ull">
+                            <li class="abou">
+                                <a href="https://edu.sqi.ng/nid/#"> About</a>
+                                <ul class="abt">
+                                    <li><a href="https://edu.sqi.ng/our-story/">Our Story</a></li>
+                                    <li><a href="https://edu.sqi.ng/our-team/">Our Team</a></li>
+                                    <li><a href="https://edu.sqi.ng/campus-info/">Campus Info</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="abou">
+                                <a href="https://edu.sqi.ng/nid/#">
+                                    Programmes </a>
+                                <ul class="abt">
+                                    <li><a href="https://edu.sqi.ng/nd/">National Diploma</a></li>
+                                    <li><a href="https://edu.sqi.ng/nid/">National Innovation Diploma</a></li>
+                                    <li><a href="https://edu.sqi.ng/procert/">Professional Diplomal Program</a></li>
+                                    <li><a href="https://edu.sqi.ng/executive-professional-certificate-programme/">Executive
+                                            Professional Certificate</a></li>
+                                    <li><a
+                                            href="https://edu.sqi.ng/executive-professional-certificate-programme/">Programm</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="Addmission">
+                                Addmission</li>
+                            <li class="ePotal">
+                                E-Potals
+                            </li>
+                            <li class="scholar">
+                                Scholarship
+                            </li>
+                            <li class="news">
+                                NEWS
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="mainm">
+            <div class="mainone">
+                <div class="hTwo">
+                    <h2>The</h2>
+                    <h2>National Innovation</h2>
+                    <h2>Diploma Program</h2>
+                    <p>Real learning begins here.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="two">
+            <div class="twohead">
+                <h1 class="hTo">Earn a Degree + Experience</h1>
+            </div>
+            <div class="twoSec">
+                <div class="twosplit">
+
+                    <div>
+                        <p>Earn your National Innovative Diploma (NID) in ICT and launch or <br>advance your career with
+                            the
+                            in-demand skills to succeed in several <br>high-growth industries. As a student in the
+                            program, you
+                            will achieve <br>proficiency and real-life practical experience in your course of
+                            <br>choice.
+                        </p>
+                    </div>
+                    <div class="seco">
+                        <p>The National Innovation Diploma (NID) offered at SQI College of ICT <br>is an approved
+                            academic
+                            program of National Board for Technical <br>Education (NBTE) an important organ under the
+                            Nigerian
+                            Federal <br>Ministry of Education. The National Innovation Diploma programme <br>provides
+                            access to
+                            Technical and Vocational education in Nigeria.</p>
+                    </div>
+                    <button class="secbtn">Addmission Requirement</button>
+                </div>
+                <div class="twoimg">
+                    <img style="width: 510px;"
+                        src="/HTML/maltimedia/image/National Innovation Diploma - Acquire In-Demand Tech skills_/sqi-graduate.jpg"
+                        alt="">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="threeCon">
+            <div class="three">
+                <h1>Our Accredited Programs</h1>
+                <p>Our courses are broad and deep – giving you the skills to create future technology.
+                </p>
+                <p>When students complete their academic studies, they are awarded the National Innovation Diploma which
+                    is equivalent to and conforms with the standard National Diploma certificates awarded in
+                    polytechnics and mono-technics in Nigeria.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
