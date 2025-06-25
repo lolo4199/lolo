@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        .one {
+            width: 100%;
+            /* height: 12px; */
+            border: thin solid red;
+            /* margin: auto; */
+
+        }
+
+        .oneOne {
+            width: 80%;
+            border: thin solid black;
+            /* display: flex; */
+            position: relative;
+            /* justify-content: center; */
+            margin: auto;
+
+        }
+
+        .oneA {
+            position: absolute;
+            display: flex;
+            /* flex-direction: row; */
+            gap: 30px;
+            top: 0;
+            right: 0;
+        }
+
+        .two {
+            width: 100%;
+            border: thin solid blue;
+            height: 50px;
+            background-color: blue;
+            display: flex;
+            gap: 70px;
+
+            /* border-top-right-radius: 50%; */
+            /* border-top-right-radius: 50%; */
+        }
+
+        .twoQ {
+            padding-left: 110px;
+        }
+
+        .twoPara {
+            display: flex;
+            padding: 15px;
+            color: white;
+            gap: 25px;
+            letter-spacing: 0px;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 100%;
+        }
+
+        .btnn {
+            background-color: rgba(12, 5, 53, 0.705);
+            width: 40%;
+            padding: 2px;
+            padding-left: 10px;
+        }
+
+        .btnn button {
+            width: 190px;
+            height: 45px;
+            background-color: blue;
+            color: white;
+            border: thin solid blue;
+            border-radius: 50px;
+            /* padding: 20px; */
+        }
+
+        .three {
+            width: 100%;
+            height: 615px;
+            border: thin solid rgb(224, 210, 7);
+            background-image: url(/meadia/Image\ herenew.png);
+            /* background-position: left; */
+            background-repeat: no-repeat;
+            background-size: contain;
+            /* justify-items: center; */
+            position: relative;
+            /* align-items: center; */
+        }
+
+        .threeQ {
+            width: 350px;
+            height: 318px;
+            border: thin solid yellow;
+            /* justify-items: center; */
+            /* align-items: center; */
+            position: absolute;
+            left: 250px;
+            top: 150px;
+
+
+            /* line-height: 30px; */
+        }
+
+        .three p {
+            font-size: 13px;
+            color: #454D5D;
+            font-weight: 400;
+            padding-top: 15px;
+        }
+
+        .three h2 {
+            font-size: 45px;
+            color: #0A2E72;
+        }
+
+        .three h5 {
+            color: #0088FF;
+            padding-bottom: 15px;
+        }
+
+        .three button {
+            background-color: #0088FF;
+            width: 157px;
+            height: 48px;
+            color: #FFFFFF;
+            border-radius: 30px;
+            border: thin solid #0088FF;
+            margin-top: 15px;
+            /* padding-top: 15px; */
+        }
+
+        .sixQ button {
+            background-color: #0088FF;
+            width: 157px;
+            height: 48px;
+            color: #FFFFFF;
+            border-radius: 30px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border: thin solid #0088FF;
+        }
+
+        .four {
+            width: 70%;
+            margin: auto;
+            height: auto;
+            /* border: thin solid violet ; */
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .four p {
+            width: 39%;
+            font-size: 24px;
+            color: #0A2E72;
+        }
+
+        .five {
+            width: 40%;
+            margin: auto;
+            text-align: center;
+            margin-top: 25px;
+            padding-top: 30px;
+            /* border: thin solid red; */
+        }
+
+        .five h2 {
+            color: #0A2E72;
+            padding-bottom: 20px;
+        }
+
+        .five p {
+            font-size: 13px;
+            font-weight: 500;
+            color: #454D5D;
+            line-height: 20px;
+        }
+
+        .fiveMain {
+            width: 100%;
+            height: 650px;
+            background-color: #F8F8F8;
+        }
+
+        .griD {
+            width: 80%;
+            margin: 100px auto;
+            display: grid;
+            background-color: #FFFFFF;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 150px 150px;
+            /* gap: 2px; */
+        }
+
+        .on {
+            grid-row: span 1;
+            border: thin solid #EFF3F6;
+            justify-items: center;
+            padding-top: 20px;
+            /* align-items: center; */
+            /* background-color: rgb(8, 214, 8); */
+        }
+
+        .griD img {
+            width: 70px;
+            height: auto;
+        }
+
+        .griD p {
+            padding: 20px;
+            color: #0A2E72;
+        }
+
+        .tw {
+            grid-row: span 1;
+            border: thin solid #EFF3F6;
+            justify-items: center;
+            padding-top: 20px;
+
+            /* background-color: rgb(8, 214, 8); */
+        }
+
+        .thre {
+            grid-row: span 1;
+            border: thin solid #EFF3F6;
+            justify-items: center;
+            padding-top: 20px;
+
+
+            /* background-color: rgb(8, 214, 8); */
+        }
+
+        .fou {
+            grid-row: span 1;
+            border: thin solid #EFF3F6;
+            justify-items: center;
+            padding-top: 20px;
+
+
+            /* background-color: rgb(8, 214, 8); */
+        }
+
+        .fiv {
+            grid-row: span 1;
+            border: thin solid #EFF3F6;
+            justify-items: center;
+            padding-top: 20px;
+
+
+            /* background-color: rgb(8, 214, 8); */
+        }
+
+        .si {
+            grid-row: span 1;
+            border: thin solid #EFF3F6;
+            justify-items: center;
+            padding-top: 20px;
+
+            /* background-color: rgb(8, 214, 8); */
+        }
+
+        .seve {
+            grid-row: span 1;
+            border: thin solid #EFF3F6;
+            justify-items: center;
+            padding-top: 20px;
+
+
+            /* background-color: rgb(8, 214, 8); */
+        }
+
+        .eigh {
+            grid-row: span 1;
+            border: thin solid #EFF3F6;
+            justify-items: center;
+            padding-top: 20px;
+
+
+            /* background-color: rgb(8, 214, 8); */
+        }
+
+        .six {
+            width: 80%;
+            height: 400px;
+            margin: auto;
+            /* border: thin solid orangered; */
+            background-color: #0A2E72;
+            /* position: relative; */
+            display: flex;
+
+
+        }
+
+        .six img {
+            width: 450px;
+            height: auto;
+            padding: 5px;
+            /* position: absolute; */
+            /* right: 10px; */
+            /* top: 10px; */
+        }
+
+        .sixQ {
+            width: 525px;
+            height: auto;
+            padding: 70px;
+            /* font-size: 30px; */
+        }
+
+        .sixQ p {
+            color: #00FFC0;
+            font-size: 13px;
+            font-weight: 500;
+            /* margin-top:20px ; */
+        }
+
+        .sixQ h4 {
+            color: #FFFFFF;
+            font-weight: 500;
+            width: 300px;
+            font-size: 27px;
+            margin-top: 30px;
+        }
+
+        .seven {
+            width: 80%;
+            height: 600px;
+            /* border: thin solid goldenrod; */
+            margin: 50px auto;
+        }
+        .sevenQ{
+            width: 60%;
+            /* height: 100px; */
+            text-align: center;
+            margin: auto;
+
+             /* border: thin solid goldenrod; */
+        }
+        .sevenQ p{
+            font-size: 16px;
+            color: #454D5D;
+            font-weight: 400;
+            line-height: 30px;
+        }
+        .sevenQ h1{
+            font-weight: 700;
+            color: #0A2E72;
+        }
+        .sevenGrid img{
+            /* justify-content: center; */
+            width: 200px;
+            height: auto;
+        }
+        .sevenGrid{
+            margin: 50px;
+            justify-items: center;
+        }
+        .eight{
+            width: 100%;
+            height: 480px;
+            background-image: url(/meadia/Bg.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            border: thin solid blueviolet;
+        }
+        .eightQ{
+            width: 60%;
+            height: 280px;
+            border: thin solid blueviolet;
+            margin: 70px auto;
+
+        }
+        .eightA{
+            width: 200px;
+            height: 200px;
+            background-color: #F8F8F8;
+        }
+        .eightA h2{
+            color: #0A2E72;
+            padding-left: 5px;
+            padding-top: 10px;
+        }
+        .eightA img{
+            width: 170px;
+            height: auto;
+            line-height: 5px;
+            padding-top: 10px;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">
+        <div class="oneOne">
+            <div class="oneQ"><img src="/meadia/loc.png" alt="loc">
+                9470 Riverview, Zion 60099
+            </div>
+            <div class="oneA">
+                <div class="">
+                    <img src="/meadia/.png" alt="">
+                    medicust@gmail.com
+                </div>
+                <div>
+                    <img src="/meadia/phon.png" alt="">
+                    +88 564 867 4687
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="two">
+        <div class="twoQ">
+            <img style="width: 150px; height: 46px;" src="/meadia/Logo.png" alt="">
+        </div>
+        <div class="twoPara">
+            <p>Home</p>
+            <p>About</p>
+            <p>Document</p>
+            <p>Pages</p>
+            <p>Blog</p>
+            <p>Contact</p>
+        </div>
+        <div class="btnn">
+            <button>Get Appointment</button>
+        </div>
+    </div>
+    <div class="three">
+        <img style="width: 400px; height: 250px;" src="/meadia/Shape.png" alt="">
+        <div class="threeQ">
+            <div>
+                <h5>Medical And Health</h5>
+            </div>
+            <div>
+                <h2>A professional and friendly care provider.</h2>
+            </div>
+            <div>
+                <p>Excepteur sint occaecat cupidatat non proident sunt officia</p>
+            </div>
+            <div>
+                <button>All Doctors</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="four">
+        <p>Need a doctor for checkup? Call for an emergency services!</p>
+
+    </div>
+    <div class="fiveMain">
+        <div class="five">
+            <h2>Our All Department</h2>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat sunt culpa officia
+                deserunt mollit anim est laborum. </p>
+        </div>
+        <div class="griD">
+            <div class="on">
+                <img src="/meadia/Icon.png" alt="">
+                <p>Cardiology</p>
+            </div>
+            <div class="tw">
+                <img src="/meadia/Icon (1).png" alt="">
+                <p>Ophthalmology</p>
+            </div>
+            <div class="thre">
+                <img src="/meadia/Icon (2).png" alt="">
+                <p>Gynecology</p>
+            </div>
+            <div class="fou">
+                <img src="/meadia/Icon (3).png" alt="">
+                <p>Dental Care</p>
+            </div>
+            <div class="fiv">
+                <img src="/meadia/Icon (4).png" alt="">
+                <p>Plastic Surgery</p>
+            </div>
+            <div class="si">
+                <img src="/meadia/Icon (5).png" alt="">
+                <p>Pediatrics</p>
+            </div>
+            <div class="seve">
+                <img src="/meadia/Icon (6).png" alt="">
+                <p>Gastrology</p>
+            </div>
+            <div class="eigh">
+                <img src="/meadia/Icon (7).png" alt="">
+                <p>Neurology</p>
+            </div>
+        </div>
+    </div>
+    <div class="six">
+
+        <div class="sixQ">
+            <p>Manage your health care</p>
+            <h4>Trust us to be there to help all and make things weel again.</h4>
+
+            <button>All Doctors</button>
+
+        </div>
+        <img src="/meadia/Images.png" alt="">
+    </div>
+    <div class="seven">
+        <div class="sevenQ">
+            <h1>Professional Care Provider</h1>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat sunt culpa officia
+                deserunt mollit anim est laborum. </p>
+        </div>
+        <div class="sevenGrid">
+            <div>
+               <img src="/meadia/1.png" alt=""> 
+               <img src="/meadia/2.png" alt="">
+               <img src="/meadia/3.png" alt="">
+               <img src="/meadia/4.png" alt="">
+            </div>
+            <div>
+                <img src="/meadia/5.png" alt="">
+                <img src="/meadia/6.png" alt="">
+                <img src="/meadia/7.png" alt="">
+                <img src="/meadia/8.png" alt="">
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="eight">
+        <div class="eightQ">
+            <div class="eightA">
+                <h2>We always ready for a challenge.</h2>
+                <img src="/meadia/2 (1).png" alt="">
+                <img src="/meadia/1 (1).png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
